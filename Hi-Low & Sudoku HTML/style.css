@@ -1,0 +1,68 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0; 
+}
+
+header {
+	background-color: blue;
+	padding-left:15px;
+}
+
+body {
+	background-color: lightblue;
+}
+
+
+h1, h2 {
+	color:blue;
+}
+#container {
+	margin: 20px;
+	text-align: center;
+	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.cell {
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	margin: 1px;
+	font-size: 18px;
+	border: 1px solid #7F8C8D;
+}
+.cell-readonly {
+	background-color: #E5E4E2;
+}
+.cell-wrong {
+	background-color: #FF8282 ;
+}
+.cell-wrong-border {
+	background-color: #FF4F4F; 
+	border: 3px solid darkred;
+}
+
+.button {
+	background-color: blue;
+	color:white;
+	border: 1px solid;
+	text-align: center;
+	padding: 5px 10px;
+	display: inline-block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	cursor: pointer;
+	font-size: 18px;
+}
+.button:hover {
+	background-color: #D1D0CE;
+}
+
+#status, #status2, #status3 {
+	font-weight: bold;
+}
+
+#rules, #home {
+	text-align: center;
+	
+}

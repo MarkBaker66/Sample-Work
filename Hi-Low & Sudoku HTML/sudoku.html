@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sudoku</title>
+  <link href="style.css" rel="stylesheet">	
+  <script src="sudoku.js"></script>
+  
+</head>
+<header><button class="button" onclick = "location.href='index.html'" type="button"> Home</button></header>
+<body>
+  <div id="rules">
+    <h1>Sudoku Game</h1>
+    <h2>How to Play</h2>
+    <p>1. Click New Board to start a new game. </p>
+    <p>2. Fill in the missing numbers with 1-4.</p>
+    <p>3. You cannot repeat a number per row, column, or 2x2 quadrant.</p>
+    <p>4. To check your input, choose a new square.</p>
+    <p>5. If it turns red, your input is incorrect</p>
+    <p>6. If it stays white, your input is correct.</p>
+    <p>7. To check the whole board, click the Solve button.</p>
+    <p>8. To reset the board, click the Reset button.</p>
+</div>
+  <div id="container">
+    <div id="cell-holder">
+      <div class="button" onclick="newBoard();">New Board</div>
+      <br>
+      <input id="cell-0" class="cell" type="number" maxlength=1 max=4 min=1 onchange="validate_cells();">
+      <input id="cell-1" class="cell" type="number" maxlength=1 max=4 min=1 onchange="validate_cells();">
+      <input id="cell-2" class="cell" type="number" maxlength=1 max=4 min=1 onchange="validate_cells();">
+      <input id="cell-3" class="cell" type="number" maxlength=1 max=4 min=1 onchange="validate_cells();"><br>
+      <input id="cell-4" class="cell" type="number" maxlength=1 max=4 min=1 onchange="validate_cells();">
+      <input id="cell-5" class="cell" type="number" maxlength=1 max=4 min=1 onchange="validate_cells();">
+      <input id="cell-6" class="cell" type="number" maxlength=1 max=4 min=1 onchange="validate_cells();">
+      <input id="cell-7" class="cell" type="number" maxlength=1 max=4 min=1 onchange="validate_cells();"><br>
+      <input id="cell-8" class="cell" type="number" maxlength=1 max=4 min=1 onchange="validate_cells();">
+      <input id="cell-9" class="cell" type="number" maxlength=1 max=4 min=1 onchange="validate_cells();">
+      <input id="cell-10" class="cell" type="number" maxlength=1 max=4 min=1 onchange="validate_cells();">
+      <input id="cell-11" class="cell" type="number" maxlength=1 max=4 min=1 onchange="validate_cells();"><br>
+      <input id="cell-12" class="cell" type="number" maxlength=1 max=4 min=1 onchange="validate_cells();">
+      <input id="cell-13" class="cell" type="number" maxlength=1 max=4 min=1 onchange="validate_cells();">
+      <input id="cell-14" class="cell" type="number" maxlength=1 max=4 min=1 onchange="validate_cells();">
+      <input id="cell-15" class="cell" type="number" maxlength=1 max=4 min=1 onchange="validate_cells();"><br>
+      <div class="button" onclick="solve();">Solve</div>
+      <div class="button" onclick="reset();">Reset</div>
+      
+      <p id= "status"></p>
+    </div>
+  </div>
+</body>
+</html>

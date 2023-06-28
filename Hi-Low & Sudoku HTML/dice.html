@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>High/Low</title>
+  <link href="style.css" rel="stylesheet">
+	<script src="dice.js"></script>
+</head>
+
+<header><button class="button" onclick = "location.href='index.html'" type="button"> Home</button></header>
+
+<body>
+    <div id="rules">
+        <h1>High/Low Dice Game</h1>
+        <h2>How to Play</h2>
+        <p>1. Enter a number between 2-11 </p>
+        <p>2. Select the High or Low button</p>
+        <p>3. If LOW was selected and your number is higher than the roll of the die, YOU WIN!</p>
+        <p>4. If LOW was selected and your number is lower than the roll of the die, Sorry, You Lose.</p>
+        <p>5. The opposite is true for a high selection.</p>
+    </div>
+  <div id="container">
+    <div id="cell-holder">
+       
+      <br>
+      <label for="guess">Please enter a number between 2-11</label><br>
+      <input type="number"  id = "guess" required min="1" max="12" size="2">
+      <br>
+      <label for="selection">Please select High or Low</label><br>
+      <div class="button" onclick="high();">High</div>      
+      <div class="button" onclick="low();">Low</div>
+      
+      <p id= "status"></p>
+      <p id= "status2"></p>
+      <p id= "status3"></p>
+    </div>
+  </div>
+</body>
+</html>
